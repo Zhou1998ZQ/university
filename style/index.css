@@ -60,6 +60,7 @@ html {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+
 }
 
 a {
@@ -99,7 +100,9 @@ svg {
 /* *starting my coding my css */
 
 
+
 header {
+    min-width: 1500px;
     background-color: var(--primary-clr);
     padding-top: 10px;
     font-family: var(--ff);
@@ -107,9 +110,12 @@ header {
 
 nav {
     position: relative;
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
     background-color: white;
-    padding: 20px 0px;
+    padding: var(--spacer) 0px;
+
 }
 
 .logo{
@@ -129,7 +135,7 @@ nav {
     font-size: var(--fs-p);
     margin:0px var(--spacer);
     text-align: center;
-    padding: 6px 15px;
+    padding: 0px var(--spacer);
     border-radius: var(--br);
     display: grid;
     place-content: center;
@@ -141,8 +147,9 @@ nav a{
 
 .navLi:hover{
     background-color: #FFD966;
+    color:var(--primary-clr);
     box-shadow: var(--shadow);
-    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .navLi :last-child{
@@ -176,14 +183,16 @@ nav a{
     font-size: var(--fs-p);
 }
 
-main.news_main{
+.news_main{
     font-family: var(--ff);
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 1500px;
 }
 
 .news{
-    width: 1200px;
+    width: 80%;
+    margin: auto;
 }
 
 .news_header {
@@ -193,14 +202,10 @@ main.news_main{
     font-weight: var(--fw-n);
 }
 
-main.event_main{
-    font-family: var(--ff);
-    display: grid;
-    place-content: center;
-}
 
 .event{
-    width: 1200px;
+    width: 80%;
+    margin: auto;
 }
 
 .event_header {
@@ -214,13 +219,19 @@ main.event_main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--spacer);
+    margin-top: 1.5rem;
 }
-.cards>div{
+.card1{
     margin: 20px 15px;
     border: 2px solid var(--secondary-clr);
     padding: 10px;
     box-shadow: var(--shadow);
     border-radius: var(--br);
+    cursor: pointer;
+}
+
+.card1:hover{
+    transform: scale(1.2);
 }
 
 .cards .card_title {
@@ -294,6 +305,7 @@ ion-icon {
   }
 
 ion-icon:hover {
+    transform: scale(1.2);
     color: white;
 }
 
