@@ -11,9 +11,9 @@
     --fs-p: 1rem;
     
     --primary-clr: #070A52;
-    --secondary-clr: #D21312;
-    --secondary-clr-light: #ED2B2A;
-    --accent-clr: #F15A59;
+    --secondary-clr: #FFD95A;
+    --secondary-clr-light: #FFF2CC;
+    --accent-clr: #FFD95A;
   
     --spacer: 0.8rem;
     --spacer-md: calc(var(--spacer) * 1.5);
@@ -62,6 +62,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -94,9 +98,6 @@ svg {
 
 /* *starting my coding my css */
 
-body{
-    min-width: 1850px
-}
 
 header {
     background-color: var(--primary-clr);
@@ -113,9 +114,8 @@ nav {
 
 .logo{
     float: left;
-    position: absolute;
     bottom: 15px;
-    margin-left: 15px;
+    margin-left: 40px;
 }
 .navUl {
     display: flex;
@@ -140,9 +140,8 @@ nav a{
 }
 
 .navLi:hover{
-    background-color: #F15A59;
+    background-color: #FFD966;
     box-shadow: var(--shadow);
-    color: white;
     transition: 0.5s;
 }
 
@@ -162,7 +161,7 @@ nav a{
 }
 .top-img{
     flex: 1;
-    margin: 0 var(--spacer-md);
+    margin: 0;
 }
 
 .greet .title{
@@ -264,8 +263,9 @@ footer{
     justify-content: space-around;
 }
 footer *{
-    color: white;
+    color: #DADADA;
 }
+
 .footer_content{
     display: flex;
     justify-content: space-around;
@@ -273,6 +273,10 @@ footer *{
 }
 .footer_content>a {
     margin: 20px;
+}
+
+.footer_content>a:hover {
+    color: white;
 }
 
 .social_media {
@@ -288,4 +292,8 @@ footer *{
 ion-icon {
     font-size: 32px;
   }
+
+ion-icon:hover {
+    color: white;
+}
 
