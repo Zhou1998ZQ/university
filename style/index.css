@@ -240,6 +240,7 @@ nav a{
 }
 
 .app_main {
+    min-width: 1500px;
     font-family: var(--ff);
     background-color: var(--accent-clr);
     margin-top: 50px;
@@ -253,9 +254,11 @@ nav a{
 }
 .app{
     display: flex;
-    justify-items: center;
+    justify-content: space-between;
     margin: 50px;
-    width: 80%;
+}
+.app>*{
+    margin: 0 1.5rem;
 }
 .app_img{
     flex: 1;
@@ -267,11 +270,13 @@ nav a{
 }
 
 footer{
+    min-width: 1500px;
     font-family: var(--ff);
     display: flex;
     background-color: var(--primary-clr);
     height: 50px;
     justify-content: space-around;
+    width: 100%;
 }
 footer *{
     color: #DADADA;
