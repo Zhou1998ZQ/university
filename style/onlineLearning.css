@@ -1,0 +1,74 @@
+div>a {
+    margin: 10px 10px 10px 30px;
+    text-decoration: underline;
+}
+
+#contentNav {
+    margin-bottom: 100px;
+}
+
+#banner {
+    width: 50%;
+    margin-right: 30px;
+    float: right;
+}
+
+#firstP {
+    width: 40%;
+    height: 250px;
+    margin: 0 0 50px 30px;
+    float: left;
+    font: 1.3em sans-serif;
+}
+
+#secondP {
+    margin: 50px 0 10px 30px;
+    float: left;
+    font: 1.3em sans-serif;
+}
+
+#thirdP {
+    margin: 10px 0 10px 30px;
+    float: left;
+    font: 1.3em sans-serif;
+}
+
+p>a {
+    color: red;
+    text-decoration: underline;
+}
+
+.tableClass {
+    width: 100%;
+}
+
+.img {
+    margin: 70px 30px 0 40px;
+    width: 80%;
+    cursor: pointer;
+}
+
+
+.imgContent {
+    margin: 0 30px 100px 40px;
+    padding: 10px;
+    width: 80%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+
+#opportunityId {
+    font: 3em sans-serif;
+    text-align: center;
+}
+
+#contentId {
+    margin: 20px 40px 60px;
+}
+
+
+footer {
+    width: 100%;
+}
