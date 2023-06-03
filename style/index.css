@@ -1,30 +1,22 @@
 :root {
     --ff: 'Mulish', sans-serif;;
-    
     --fw-n: 300;
     --fw-m: 600;
     --fw-b: 800;
-    
     --fs-4: 2rem;
-
     --fs-2: 3.5rem;
     --fs-p: 1rem;
-    
+    --fs-6: 1.5rem;
     --primary-clr: #070A52;
     --secondary-clr: #FFD95A;
     --secondary-clr-light: #FFF2CC;
     --accent-clr: #FFD95A;
-  
     --spacer: 0.8rem;
     --spacer-md: calc(var(--spacer) * 1.5);
     --spacer-lg: calc(var(--spacer) * 2.5);
-    
     --shadow: 0 0 1em rgba(0,0,0, .25);
     --br: 8px;
-    
   }
-
-
 /* *starting reset the css */
 /* Box sizing rules */
 *,
@@ -32,46 +24,38 @@
 *::after {
   box-sizing: border-box;
 }
-
 /* Remove default margin */
 * {
   margin: 0;
   padding:0;
   font: inherit;
 }
-
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
-
 /* Set core body defaults */
 body,
 html {
     height :100%
 }
-
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-
 }
-
 a {
     text-decoration: none;
+    color: inherit;
 }
-
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
 /* Make images easier to work with */
 img,
 picture,
@@ -79,14 +63,11 @@ svg {
   max-width: 100%;
   display: block;
 }
-
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
    scroll-behavior: auto;
   }
-  
   *,
   *::before,
   *::after {
@@ -96,221 +77,202 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-
-/* *starting my coding my css */
-
-
-
-header {
-    min-width: 1500px;
-    background-color: var(--primary-clr);
-    padding-top: 10px;
-    font-family: var(--ff);
+.erx_wrap{
+    width: 1250px;
+    /* max-width: 96%; */
+    margin: 0 auto;
 }
-
-nav {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    background-color: white;
-    padding: var(--spacer) 0px;
-
-}
-
-.logo{
+.flt {
     float: left;
-    bottom: 15px;
-    margin-left: 40px;
+}
+.frt {
+    float: right;
+}
+ul{
+    list-style: none;
+}
+.on_working{
+    background-color: lightblue;
+}
+/* *my code */
+body {
+    min-width: 1750px
+}
+header{
+    /* height: 1000px; */
+    background-color: var(--primary-clr);
+    padding-top: 20px;
+}
+/* *navbar section */
+.nav_section {
+    background-color: white;
+    min-height: 150px;
+    padding: 25px;
+    position: relative
+}
+.logo img{
+    max-height: 100px;
 }
 .navUl {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding-left: 40px;
-    padding-right: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 35%;
 }
 .navLi{
-    font-family: inherit;
+    margin:0 var(--spacer);
     font-size: var(--fs-p);
-    margin:0px var(--spacer);
-    text-align: center;
-    padding: 0px var(--spacer);
-    border-radius: var(--br);
-    display: grid;
-    place-content: center;
+    font-weight: var(--fw-m);
+    padding: 15px
 }
-nav a{
-    text-decoration: none;
-    color: inherit;
-}
-
 .navLi:hover{
-    background-color: #FFD966;
-    color:var(--primary-clr);
+    background-color: var(--secondary-clr);
+    border-radius: var(--br);
     box-shadow: var(--shadow);
     transform: scale(1.2);
+    transition: 0.4s;
 }
-
-.navLi :last-child{
-    cursor: pointer;
+.navLi>a{
+    color: var(--primary-clr);
 }
-
-.top {
+/* *head_banner section */
+.head_banner{
+    padding:0 80px;
     display: flex;
     justify-content: space-between;
 }
-.greet{
-    flex: 1;
-    display: grid;
-    place-content: center;
-    margin: 0 var(--spacer-md);
-}
-.top-img{
-    flex: 1;
-    margin: 0;
-}
-
-.greet .title{
+.head_banner_greet{
+    font-size: var(--fs-4);
+    margin: 0 var(--spacer);
     color: white;
-    font-family: inherit;
-    font-size: var(--fs-2);
     font-weight: var(--fw-b);
+    line-height: 350px;
 }
-.greet .text{
-    color: white;
-    font-family: inherit;
-    font-size: var(--fs-p);
+.head_banner_img>img{
+    margin: 0 var(--spacer);
+    max-height: 350px;
 }
-
-.news_main{
-    font-family: var(--ff);
+/* *main section */
+.main_section {
+    display: flex;
+}
+.news_section {
+    flex: 3;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr;
+}
+.news_section>p{
+    font-size: var(--fs-6);
+    text-align: center;
+    font-weight: var(--fw-m);
+    margin:15px 0
+}
+.card{
+    max-width: 880px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+.card_img{
+    margin: 25px;
+    grid-area: 1/1/3/2;
+}
+.card .text{
+    margin: 25px;
+    font-weight: var(--fw-m);
+    text-align: justify;
+}
+.card .link{
+    text-align: center;
+}
+.card .link>a{
+    text-decoration: underline;
+    font-size: medium;
+}
+.card:hover{
+    background-color: var(--secondary-clr-light);
+    border-radius: var(--br);
+    box-shadow: var(--shadow);
+    transform: scale(1);
+    transition: 0.4s;
+}
+.event_section {
+    flex: 1;
+    background-color: var(--secondary-clr-light);
+    margin: 15px auto;
+    border-radius: var(--br);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
-    min-width: 1500px;
+    align-items: center;
 }
-
-.news{
-    width: 80%;
-    margin: auto;
-}
-
-.news_header {
+.event_section>p{
+    font-size: var(--fs-6);
     text-align: center;
-    margin-top: 50px;
-    font-size: var(--fs-2);
-    font-weight: var(--fw-n);
-}
-
-
-.event{
-    width: 80%;
-    margin: auto;
-}
-
-.event_header {
-    text-align: center;
-    margin-top: 50px;
-    font-size: var(--fs-2);
-    font-weight: var(--fw-n);
-}
-
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--spacer);
-    margin-top: 1.5rem;
-}
-.card1{
-    margin: 20px 15px;
-    border: 2px solid var(--secondary-clr);
-    padding: 10px;
-    box-shadow: var(--shadow);
-    border-radius: var(--br);
-    cursor: pointer;
-}
-
-.card1:hover{
-    transform: scale(1.2);
-}
-
-.cards .card_title {
-    font-size: var(--fs-4);
     font-weight: var(--fw-m);
+    margin: 15px 15px 40px 15px;
+}
+.event_section li{
+    text-align: center;
+    margin: 20px 10px;
+}
+.event_section a{
+    text-decoration: underline;
+}
+.event_section a:hover{
+    color: blue;
 }
 
-.app_main {
-    min-width: 1500px;
-    font-family: var(--ff);
+.ad_element {
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    margin: 0;
+    padding: 5px 50px;
+    align-items: center;
     background-color: var(--accent-clr);
-    margin-top: 50px;
-    padding: var(--spacer-lg)
+}
+.ad_element *{
+    margin: 0px 50px;
+}
+.ad_element img{
+    max-height: 200px;
+}
+.ad_text{
+    font-size: var(--fs-4);
+    text-align: justify;
+    font-weight: var(--fw-m);
 }
 
-.app_header{
-    font-size: var(--fs-2);
-    font-weight: var(--fw-m);
-    text-align: center;
+/* *footer */
+footer{
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 10px 0;
 }
-.app{
+.footer_element {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
-}
-.app>*{
-    margin: 0 1.5rem;
-}
-.app_img{
-    flex: 1;
-}
-.app_text{
-    flex: 1;
-    font-size: var(--fs-4);
-    font-weight: var(--fw-n);
-}
 
-footer{
-    min-width: 1500px;
-    font-family: var(--ff);
-    display: flex;
-    background-color: var(--primary-clr);
-    height: 50px;
-    justify-content: space-around;
-    width: 100%;
 }
-footer *{
-    color: #DADADA;
-}
-
 .footer_content{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
-.footer_content>a {
-    margin: 20px;
-}
-
-.footer_content>a:hover {
-    color: white;
+.footer_content>a{
+    margin: 0 25px;
+    text-decoration: underline;
+    
 }
 
-.social_media {
+.social_media{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
 }
-.social_media a{
-    margin-right: 50px;
+.social_media *{
+    margin: 0 10px;
+    font-size: 25px;
 }
 
-ion-icon {
-    font-size: 32px;
-  }
-
-ion-icon:hover {
+.social_media ion-icon:hover{
     transform: scale(1.2);
-    color: white;
+    color: var(--accent-clr);
 }
-
