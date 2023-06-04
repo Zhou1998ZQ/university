@@ -1,0 +1,97 @@
+div>a {
+    margin: 50px 10px 10px 200px;
+    text-decoration: underline;
+}
+
+
+#heading1 {
+    margin: 50px 0 50px 200px;
+    font: 8em sans-serif;
+}
+
+#box {
+    margin: 0 30px 40px 200px;
+    height: 230px;
+    width: 400px;
+    background-color: #E6E6E6;
+    padding: 15px;
+    float: left;
+}
+
+#boxTitle {
+    font: 1.6em sans-serif;
+}
+
+#boxContent {
+    margin-top: 20px;
+    font: 1.2em sans-serif;
+}
+
+ul {
+    margin: 20px;
+    list-style-type: disc;
+    text-decoration: underline;
+    color: #0680A6;
+}
+
+#content {
+    float: right;
+    width: 60%;
+    font: 2em sans-serif;
+    margin-top: 0;
+    color: #0680A6;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 120%;
+    margin-right: 40px;
+}
+
+
+
+#contentP2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sublist {
+
+    float: left;
+
+}
+
+.hrClass {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.subImg{
+    margin: 20px 0 20px 200px;
+    float: left;
+}
+
+
+.subCard {
+    margin: 10px 0 10px 100px;
+    float: left;
+}
+.subTitle {
+    font: 3em sans-serif;
+    margin-bottom: 50px;
+}
+
+.subContent{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.subA {
+    text-decoration: underline;
+    color: #0680A6;
+    font-size: 19px;
+}
+
+#lastDiv{
+    margin-bottom: 500px;
+}
