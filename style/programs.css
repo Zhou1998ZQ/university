@@ -1,0 +1,33 @@
+/* rules for programs page*/
+
+:root {
+    --ff: 'Mulish', sans-serif;;
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+    --fs-4: 2rem;
+    --fs-2: 3.5rem;
+    --fs-p: 1rem;
+    --fs-6: 1.5rem;
+    --primary-clr: #070A52;
+    --secondary-clr: #FFD95A;
+    --secondary-clr-light: #FFF2CC;
+    --accent-clr: #FFD95A;
+    --spacer: 0.8rem;
+    --spacer-md: calc(var(--spacer) * 1.5);
+    --spacer-lg: calc(var(--spacer) * 2.5);
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 8px;
+  }
+
+  #prog-header {
+    background-color: var(--primary-clr);
+    padding-top: 20px;
+    min-height: 150px;
+  }
+
+  #prog-head-text {
+    text-align: center;
+  }
+
+
