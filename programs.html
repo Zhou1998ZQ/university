@@ -2,105 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/index.css" />
-    <link rel="stylesheet" href="style/programs.css" />
-    <link rel="icon" type="image/x-icon" href="./img/178462-OWH94V-709.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
-    <title>Programs - University</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/programs.css" />
+  <link rel="icon" type="image/x-icon" href="./img/178462-OWH94V-709.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+  <title>Programs - University</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav_section">
-            <div class="nav">
-              <div class="logo">
-                <img
-                  src="img/178462-OWH94V-709.jpg"
-                  alt="University_logo"
-                  class="flt"
-                />
-              </div>
-              <div class="nav_bar frt">
-                <ul class="navUl">
-                  <li class="navLi"><a href="">Admissions</a></li>
-                  <li class="navLi"><a href="./news-events.html">News and Events</a></li>
-                  <li class="navLi"><a href="./programs.html">Programs</a></li>
-                  <li class="navLi"><a href="">Student Life</a></li>
-                  <li class="navLi"><a href="">About the University</a></li>
-                  <li class="navLi"><a href="./research.html">Research</a></li>
-                  <li class="navLi"><a href="./onlineLearning.html">Online Learning Portal</a></li>
-                  <li class="navLi">
-                    <label for="search" style="margin-right: 10px">Search:</label
-                    ><input type="text" id="search" placeholder="more..." />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    </header>
-    <main>
-        <div id="contentNav">
-            <a href="index.html">Home</a>&nbsp;/&nbsp;&nbsp;Programs
+  <header>
+    <div class="nav_section">
+      <div class="nav">
+        <div class="logo">
+          <img src="img/178462-OWH94V-709.jpg" alt="University_logo" class="flt" />
         </div>
-
-        <div id="prog-header">
-            <p class="head_banner_greet" id="prog-head-text">Academics at the University</p>
+        <div class="nav_bar frt">
+          <ul class="navUl">
+            <li class="navLi"><a href="">Admissions</a></li>
+            <li class="navLi"><a href="./news-events.html">News and Events</a></li>
+            <li class="navLi"><a href="./programs.html">Programs</a></li>
+            <li class="navLi"><a href="">Student Life</a></li>
+            <li class="navLi"><a href="">About the University</a></li>
+            <li class="navLi"><a href="./research.html">Research</a></li>
+            <li class="navLi"><a href="./onlineLearning.html">Online Learning Portal</a></li>
+            <li class="navLi">
+              <label for="search" style="margin-right: 10px">Search:</label><input type="text" id="search"
+                placeholder="more..." />
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </header>
 
-        <div id="prog-levels">
-            <!-- table, list and one photo beside in merged columns -->
-            <h2 id="prog-levels-header">Find Your Program</h2>
-            <p>Undergraduate: Start your academic journey</p>
-            <p>Graduate: Masters, doctorate and post-doctorate education and research</p>
-            <p>Continuing Education: Programs and courses on campus and online</p>
-        </div>
 
-        <div id="prog-faculties">
-            <h2 id="prog-faculties-header">Explore Our Faculties</h2>
-            <!-- table, side by side with photo for each -->
-            <p>Arts and Science</p>
-            <p>Architecture and Design</p>
-            <p>Engineering and Computer Science</p>
-            <p>Business and Management</p>
-        </div>
+  <main>
+    <div id="contentNav">
+      <a href="index.html">Home</a>&nbsp;/&nbsp;&nbsp;Programs
+    </div>
 
-        <div id="prog-explore">
-            <h3 id="prog-explore-header">Not sure where to start?</h3>
-            <a id="prog-explore-directory" href="#">Explore our full program directory</a>
-        </div>
+    <div id="prog-header">
+      <p class="head_banner_greet" id="prog-head-text">Academics at the University</p>
+    </div>
 
-    </main>
+    <div id="prog-levels">
+      <!-- table, list and one photo beside in merged columns -->
+      <h2 id="prog-levels-header">Find Your Program</h2>
+      <table id="prog-levels-body">
+        <tr>
+          <td>
+            <h3>Undergraduate</h3>
+            <br>
+            <p>Choose from one of over 200 diverse programs to jumpstart your academic journey.</p>
+            <br>
+          </td>
+          <td rowspan="3">
+            <img src="/img/woman-studying-library.jpg" alt="Female student studying in a library" id="prog-levels-photo"
+              width="500px">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Graduate</h3>
+            <p>Masters, doctorate and post-doctorate education and research in cutting-edge facilities, conducted
+              alongside industry's foremost innovators.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Continuing Education</h3>
+            <p>Programs, courses and bootcamps designed by workforce veterans to advance your career, offered on campus
+              and online.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-    <footer>
-        <div class="footer_element erx_wrap">
-          <div class="footer_content">
-            <a href="">Contact Us</a><a href="">About Us</a><a href="">Career</a>
-          </div>
-          <div class="social_media">
-            <a href="www.facebook.com" class="social_media_logo"
-              ><ion-icon name="logo-facebook"></ion-icon> </a
-            ><a href="www.twitter.com" class="social_media_logo"
-              ><ion-icon name="logo-twitter"></ion-icon></a
-            ><a href="www.youtube.com" class="social_media_logo"
-              ><ion-icon name="logo-youtube"></ion-icon></a
-            ><a href="www.instagram.com" class="social_media_logo"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
-          </div>
-        </div>
-      </footer>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
+    <div id="prog-faculties">
+      <h2 id="prog-faculties-header">Explore Our Faculties</h2>
+      <table id="prog-faculties-body">
+        <tr>
+          <td>
+            <a class="prog-faculties-links" href="#">Arts and Science</a>
+            <img src="#" id="arts-science" alt="">
+          </td>
+          <td>
+            <a class="prog-faculties-links" href="#">Architecture and Design</a>
+            <img src="#" id="architecture-design" alt="">
+          </td>
+          <td>
+            <a class="prog-faculties-links" href="#">Engineering and Computer Science</a>
+            <img src="#" id="engineering-comp-sci" alt="">
+          </td>
+          <td>
+            <a class="prog-faculties-header" href="#">Business and Management
+              <br>
+              <img src="#" id="business-management" alt="">
+            </a>
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="prog-explore">
+      <h3 id="prog-explore-header">Not sure where to start?</h3>
+      <a id="prog-explore-directory" href="#">Explore our full program directory</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer_element erx_wrap">
+      <div class="footer_content">
+        <a href="">Contact Us</a><a href="">About Us</a><a href="">Career</a>
+      </div>
+      <div class="social_media">
+        <a href="www.facebook.com" class="social_media_logo"><ion-icon name="logo-facebook"></ion-icon> </a><a
+          href="www.twitter.com" class="social_media_logo"><ion-icon name="logo-twitter"></ion-icon></a><a
+          href="www.youtube.com" class="social_media_logo"><ion-icon name="logo-youtube"></ion-icon></a><a
+          href="www.instagram.com" class="social_media_logo"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
