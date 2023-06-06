@@ -1,0 +1,57 @@
+@import '/style/index.css';
+*{font-family: inherit;
+}
+
+.head_banner_img>img{
+    width: 100%;
+    margin: 0;
+}
+.head_banner_img{
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding: 2rem;
+}
+.history_title{
+    font-size:var(--fs-4);
+    text-align: center;
+    font-family: var(--ff);
+    font-weight: var(--fw-b);
+    margin-bottom: 2rem;
+}
+
+.history_content :nth-child(1){
+    width: 250px;
+    margin-right: 1rem;
+}
+
+hr{
+    margin: 3rem 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_list *{
+font-size: var(--fs-6);
+}
+.contact_list li:first-of-type{
+    margin-bottom: 1rem;
+    font-weight: var(--fw-b);
+}
+
+.contact a{
+    text-decoration: underline;
+}
+.contact a:hover{
+    color: blue;
+}
+.map{
+    box-shadow: var(--shadow);
+}
+
+
+
