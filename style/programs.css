@@ -20,14 +20,110 @@
     --br: 8px;
   }
 
-  #prog-header {
-    background-color: var(--primary-clr);
-    padding-top: 20px;
-    min-height: 150px;
+  /* header */
+
+  #program-header {
+    color:var(--primary-clr);
   }
 
-  #prog-head-text {
-    text-align: center;
+  #program-header h1 {
+    font:6rem sans-serif;
+    text-align:center;
+    padding-bottom:50px;
   }
 
+  #program-header p {
+    font-size:2rem;
+    font-family:sans-serif;
+    text-align:center;
+    width:60%;
+    margin:auto;
+    color:var(--primary-clr);
+    padding-bottom:50px;
+  }
+
+  #program-subheading {
+    font-style:italic;
+    font-family:sans-serif;
+    text-align:center;
+    color:var(--primary-clr);
+  }
+
+  /* program levels */
+
+  h2 {
+    font:3rem sans-serif;
+    text-align:center;
+    background-color: var(--accent-clr);
+    padding:40px;
+  }
+
+  #prog-levels-body {
+    width:90%;
+    font:1.5rem sans-serif;
+    margin:40px;
+    padding:20px;
+
+  }
+
+  #prog-levels-body tr td {
+    padding:20px;
+  }
+
+  h3 {
+    font-size:2rem;
+    font-weight:bold;
+  }
+
+  hr {
+    margin:30px 30px 60px 30px;
+  }
+
+  /* faculties */
+
+  #prog-faculties {
+    width:100%;
+    margin:auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+  }
+
+  .column {
+    flex:25%;
+  }
+
+  .column img {
+    margin-top:20px;
+    vertical-align:center;
+    height:540px;
+    display:inline;
+    position:relative;
+  }
+
+  .column img:hover {
+    opacity:0.7;
+  }
+
+  #prog-explore {
+    background-color:var(--primary-clr);
+    color:white;
+    font:2rem sans-serif;
+    width:50%;
+    margin:100px auto;
+    padding:40px;
+    clear:both;
+    text-align:center;
+  }
+
+  #prog-explore h3 {
+    font-size:3rem;
+  }
+
+  #prog-explore a:hover {
+    text-decoration: underline;
+  }
 

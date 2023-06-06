@@ -82,6 +82,7 @@
     font-size:1.5rem;
     font-family:var(--ff);
     table-layout:fixed;
+    width:100%;
     border-collapse:collapse;
     border:5px black;
   }
